@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=10">
+    <title>{% block title %}Home{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="content-wrapper">
+        <header class="header">
+            <p style="font-size: 30px; margin: 0; padding: 10px 1em;">Header</p>
+        </header>
+
+        <div class="container clearfix">
+            <aside class="sidebar sidebar1">
+                <a href="{% url 'page-home' %}" class="menu__link">Home</a><br>
+                <a href="{% url 'page-users' %}" class="menu__link">List of employees</a><br>
+                <a href="#" class="menu__link">List of employees (info)</a><br>
+            </aside>
+
+            <main class="content">
+            {% block content %}
+                <p style="text-align: left; font-size: 30px; margin: 0; padding: 1.5em 0;">
+                    Home page
+                </p>
+            {% endblock %}
+            </main>
+
+            <aside class="sidebar sidebar2"></aside>
+        </div>
+
+        <footer class="footer">
+            <p style="font-size: 30px; margin: 0; padding: 10px 1em;">Footer</p>
+        </footer>
+    </div>
+</body>
+</html>
