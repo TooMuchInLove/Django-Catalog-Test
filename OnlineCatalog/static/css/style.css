@@ -198,7 +198,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 1.4;
     color: #333;
@@ -234,110 +234,7 @@ html, body {
     flex: none;
 }
 
-.content-wrapper {
-    margin: 0 auto;
-    flex-direction: column;
-    height: 100%;
-    min-width: 500px;
-    max-width: 2000px;
-}
-
-.container {
-    flex-wrap: nowrap;
-    flex: 1 0 auto;
-}
-
-.content {
-    width: 100%;
-    /*flex-direction: column;
-    flex: 1 1 auto;*/
-    order: 0;
-    order: 1;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.user-card {
-    height: 400px;
-    width: 300px;
-
-    background: #d0c0df;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 30px 0 0 30px;
-
-    position: relative;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-}
-
-.user-profile-img {
-    height: 100px;
-    width: 100px;
-    /*background-size: cover;
-    background-position: center;*/
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    border-radius: 50%;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-}
-
-.user-name {
-    width: 200px;
-}
-
-.user-description {
-    text-align: center;
-}
-
-.user-date, .user-description {
-    font-size: 20px;
-}
-
-.user-amount {
-    width: 100%;
-    height: 30px;
-
-    display: flex;
-    color: #1e003a;
-    font-size: 20px;
-
-    position: absolute;
-    bottom: 0;
-}
-
-/*.button {
-    width: 100%;
-    //height: 50px;
-    background: #1e003a;
-    color: #ffffff;
-    font-size: 20px;
-    text-align: center;
-    display: bottom;
-}*/
-
-.sidebar {
-    background: #FFD399;
-    flex: 0 0 auto;
-}
-
-.menu__link {
-    background: #FFD500;
-    color: #000000;
-    margin: 10 auto;
-}
-
-.sidebar1 {
-    width: 200px;
-    order: 1;
-    order: 0;
-}
-
-.sidebar2 {
-    width: 200px;
-    order: 2;
-    order: 2;
-}
+/* ------------------------------- */
 
 a {
   outline: none;
@@ -350,7 +247,7 @@ a {
   color: #000000;
 }
 
-li:last-child a {
+/*li:last-child a {
   margin-right: 0;
 }
 
@@ -364,4 +261,145 @@ a:hover {
 
 a:link {
   background: orange;
+}*/
+
+.menu__link, .user__link {
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
+
+.menu__link:hover, .user__link:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------- */
+
+.sidebar {
+    width: 400px;
+    flex: 0 0 auto;
+}
+
+.sidebar1 {
+    order: 1;
+    order: 0;
+    padding: 50px;
+}
+
+.sidebar2 {
+    order: 2;
+    order: 2;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    flex-direction: column;
+    height: 100%;
+    min-width: 500px;
+    max-width: 2000px;
+}
+
+.container {
+    flex-wrap: nowrap;
+    flex: 1 0 auto;
+}
+
+/* ------------------------------------- */
+
+.content, .user-sorted {
+    width: 100%;
+    padding: 10px;
+}
+
+.content {
+    background: #f1f1f1;
+    order: 0;
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-sorted {
+    min-height: 50px;
+    max-height: 100px;
+    background: #d0c0df;
+    border-radius: 5px;
+}
+
+/* ------------------------------------- */
+
+.user-card {
+    height: 300px;
+    width: 200px;
+    background: #d0c0df;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.user-card, .user-card0, .user-card1 {
+    position: relative;
+}
+
+.user-card0, .user-card1 {
+    width: 100%;
+    padding: 30px;
+}
+
+.user-card1 {
+    height: 210px;
+    border-bottom: 1px dashed #919191;
+}
+
+.user-name {
+    height: 85px;
+}
+
+.user-description {
+    text-align: center;
+    font-weight: bold;
+}
+
+.user-amount {
+    width: 100%;
+    display: flex;
+    color: #1e003a;
+    bottom: 0;
+}
+
+.user-profile-img0, .user-profile-img1 {
+    top: 30px;
+    right: 30px;
+    border-radius: 10px;
+}
+
+.user-amount, .user-profile-img0, .user-profile-img1 {
+    position: absolute;
+}
+
+.user-profile-img0 {
+    height: 300px;
+    width: 300px;
+}
+
+.user-profile-img1 {
+    height: 150px;
+    width: 150px;
+}
+
+.user-block-info0 {
+    width: 350px;
+}
+
+.user-name, .user-amount, .user-date0, .user-description0, .user-amount0,
+.user-date1, .user-description1, .user-amount1 {
+    font-size: 20px;
+}
+
+.user-date0, .user-description0, .user-amount0,
+.user-date1, .user-description1, .user-amount1 {
+    padding: 0 30px 10px 30px;
+}
+
+/* ------------------------------------- */

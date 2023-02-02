@@ -10,20 +10,20 @@
 <body>
     <div class="content-wrapper">
         <header class="header">
-            <p style="font-size: 30px; margin: 0; padding: 10px 1em;">Header</p>
+            <p style="font-size: 30px; margin: 0; padding: 10px 1em;">ООО &laquo;Скайтек&raquo;</p>
         </header>
 
         <div class="container clearfix">
             <aside class="sidebar sidebar1">
                 <a href="{% url 'page-home' %}" class="menu__link">Home</a><br>
                 <a href="{% url 'page-users' %}" class="menu__link">List of employees</a><br>
-                <a href="#" class="menu__link">List of employees (info)</a><br>
+                <a href="{% url 'page-users-info' %}" class="menu__link">List of employees (info)</a><br>
             </aside>
 
             <main class="content">
             {% block content %}
                 <p style="text-align: left; font-size: 30px; margin: 0; padding: 1.5em 0;">
-                    Home page
+                    Тестовое задание на позициюPython/Linux Developer
                 </p>
             {% endblock %}
             </main>
@@ -31,9 +31,7 @@
             <aside class="sidebar sidebar2"></aside>
         </div>
 
-        <footer class="footer">
-            <p style="font-size: 30px; margin: 0; padding: 10px 1em;">Footer</p>
-        </footer>
+        <footer class="footer"></footer>
     </div>
 </body>
 </html>

@@ -3,19 +3,13 @@
 {% load static %}
 
 {% block content %}
-    {% for user in users|dictsort:'id' %}
-        <div class="user-card" onclick="location.href='{% url 'page-home' %}'" style="cursor:pointer;">
-            {% if user.photo %}
-                <img src="{{ MEDIA_URL }}{{ user.photo }}" alt="" class="user-profile-img">
-            {% else %}
-                <img src="{{ MEDIA_URL }}images/users/none.png" alt="" class="user-profile-img">
-            {% endif %}
-            <h1 class="user-name">{{ user.name }}</h1>
+    {% include 'users/form_sort.html' %}
+    {% for user in users %}
+        <div class="user-card" onclick="location.href='{% url 'page-user-info' user.id %}'" style="cursor:pointer;">
+            <h1 class="user-name">{{ user.name }}</h1>id:{{ user.id }}
             <div class="user-description">{{ user.fk_position }}</div>
             <div class="user-date">Приём на работу {{ user.date }}</div>
-            <div class="user-amount">
-                заработная плата {{ user.amount }} р.
-            </div>
+            <div class="user-amount">заработная плата {{ user.amount }} р.</div>
         </div>
     {% endfor %}
 {% endblock %}

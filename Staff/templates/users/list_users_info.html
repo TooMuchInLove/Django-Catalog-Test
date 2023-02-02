@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+    {% include 'users/form_sort.html' %}
+    {% for user in users %}
+        <div class="user-card1">
+            {% if user.photo %}
+                <img src="{{ MEDIA_URL }}{{ user.photo }}" alt="" class="user-profile-img1">
+            {% else %}
+                <img src="{{ MEDIA_URL }}images/users/none.png" alt="" class="user-profile-img1">
+            {% endif %}
+            <a href="{% url 'page-user-info' user.id %}" class="user__link">{{ user.name }}</a> id:{{ user.id }}
+            <div class="user-description1">Должность: {{ user.fk_position }}</div>
+            <div class="user-date1">Дата приёма на работу {{ user.date }}</div>
+            <div class="user-amount1">Заработная плата {{ user.amount }} р.</div>
+        </div>
+    {% endfor %}
+{% endblock %}

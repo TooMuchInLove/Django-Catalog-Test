@@ -1,0 +1,16 @@
+<div class="user-sorted">
+    <form method="POST">
+    {% csrf_token %}
+        Сортировка
+        <input class="button" type="submit" name="id" value="id">
+        <input class="button" type="submit" name="-id" value="-id">
+        <input class="button" type="submit" name="name" value="ФИО сотрудника">
+        <input class="button" type="submit" name="-name" value="-ФИО сотрудника">
+        <input class="button" type="submit" name="date" value="Дата">
+        <input class="button" type="submit" name="-date" value="-Дата">
+        <input class="button" type="submit" name="amount" value="Заработная плата">
+        <input class="button" type="submit" name="-amount" value="-Заработная плата">
+        <input class="button" type="submit" name="fk_position" value="Должность">
+        <input class="button" type="submit" name="-fk_position" value="-Должность">
+    </form>
+</div>

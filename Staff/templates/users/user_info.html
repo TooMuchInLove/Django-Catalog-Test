@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="user-card0">
+        {% if user.photo %}
+            <img src="{{ MEDIA_URL }}{{ user.photo }}" alt="" class="user-profile-img0">
+        {% else %}
+            <img src="{{ MEDIA_URL }}images/users/none.png" alt="" class="user-profile-img0">
+        {% endif %}
+        <div class="user-block-info0">
+            <h1 class="user-name0">{{ user.name }}</h1>
+            <div class="user-description0">Должность: {{ user.fk_position }}</div>
+            <div class="user-date0">Дата приёма на работу {{ user.date }}</div>
+            <div class="user-amount0">Заработная плата {{ user.amount }} р.</div>
+        </div>
+    </div>
+{% endblock %}
