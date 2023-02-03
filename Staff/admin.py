@@ -5,7 +5,7 @@ from .models import Position, User
 
 class PositionAdmin(ModelAdmin):
     # Отображение списка должностей
-    list_display = ('name',)
+    list_display = ('name', 'id')
 site.register(Position, PositionAdmin)
 
 

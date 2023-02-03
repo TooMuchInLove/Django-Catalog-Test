@@ -3,7 +3,6 @@
 {% load static %}
 
 {% block content %}
-    {% include 'users/form_sort.html' %}
     {% for user in users %}
         <div class="user-card" onclick="location.href='{% url 'page-user-info' user.id %}'" style="cursor:pointer;">
             <h1 class="user-name">{{ user.name }}</h1>id:{{ user.id }}
@@ -13,3 +12,30 @@
         </div>
     {% endfor %}
 {% endblock %}
+
+<!--
+    <ul class="treeCSS">
+    {% for user in users %}
+        <li>
+        <div class="user-card" onclick="location.href='{% url 'page-user-info' user.id %}'" style="cursor:pointer;">
+            <h1 class="user-name">{{ user.name }}</h1>id:{{ user.id }}
+            <div class="user-description">{{ user.fk_position }}</div>
+            <div class="user-date">Приём на работу {{ user.date }}</div>
+            <div class="user-amount">заработная плата {{ user.amount }} р.</div>
+        </div>
+        <ul>
+        {% for user in users %}
+            <li>
+            <div class="user-card" onclick="location.href='{% url 'page-user-info' user.id %}'" style="cursor:pointer;">
+                <h1 class="user-name">{{ user.name }}</h1>id:{{ user.id }}
+                <div class="user-description">{{ user.fk_position }}</div>
+                <div class="user-date">Приём на работу {{ user.date }}</div>
+                <div class="user-amount">заработная плата {{ user.amount }} р.</div>
+            </div>
+            </li>
+        {% endfor %}
+        </ul>
+        </li>
+    {% endfor %}
+    </ul>
+-->

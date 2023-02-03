@@ -1,0 +1,172 @@
+[
+    {
+        "pk": 9,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 6,
+            "name": "Артамонов Филипп Константинович",
+            "date": "2023-01-04",
+            "amount": 75000
+        }
+    },
+    {
+        "pk": 10,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 6,
+            "name": "Коровин Георгий Маркович",
+            "date": "2023-01-09",
+            "amount": 70000
+        }
+    },
+    {
+        "pk": 11,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 7,
+            "name": "Авдеева Алиса Михайловна",
+            "date": "2023-01-05",
+            "amount": 110000
+        }
+    },
+    {
+        "pk": 12,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 7,
+            "name": "Кузьмин Ярослав Владимирович",
+            "date": "2023-01-07",
+            "amount": 105000
+        }
+    },
+    {
+        "pk": 13,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 1,
+            "name": "Зиновьева Анна Артёмовна",
+            "date": "2023-01-01",
+            "amount": 130000
+        }
+    },
+    {
+        "pk": 14,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 1,
+            "name": "Иванова Софья Яновна",
+            "date": "2023-01-02",
+            "amount": 130000
+        }
+    },
+    {
+        "pk": 15,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 3,
+            "name": "Виноградова Мария Александровна",
+            "date": "2023-01-03",
+            "amount": 150000
+        }
+    },
+    {
+        "pk": 16,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 3,
+            "name": "Морозов Илья Максимович",
+            "date": "2023-01-02",
+            "amount": 160000
+        }
+    },
+    {
+        "pk": 17,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 3,
+            "name": "Богданова Александра Евгеньевна",
+            "date": "2023-01-02",
+            "amount": 150000
+        }
+    },
+    {
+        "pk": 18,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 4,
+            "name": "Корнеева Анна Никитична",
+            "date": "2023-01-05",
+            "amount": 70000
+        }
+    },
+    {
+        "pk": 19,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 4,
+            "name": "Белова Мадина Ивановна",
+            "date": "2023-01-01",
+            "amount": 71000
+        }
+    },
+    {
+        "pk": 20,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 5,
+            "name": "Харитонов Степан Матвеевич",
+            "date": "2023-01-04",
+            "amount": 90000
+        }
+    },
+    {
+        "pk": 21,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 5,
+            "name": "Макаров Дмитрий Кириллович",
+            "date": "2023-01-01",
+            "amount": 87000
+        }
+    },
+    {
+        "pk": 22,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 1,
+            "name": "Смирнова Милана Викторовна",
+            "date": "2023-01-03",
+            "amount": 100000
+        }
+    },
+    {
+        "pk": 23,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 1,
+            "name": "Соколов Матвей Тимофеевич",
+            "date": "2023-01-05",
+            "amount": 101000
+        }
+    },
+    {
+        "pk": 24,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 6,
+            "name": "Игнатова Елизавета Владимировна",
+            "date": "2023-01-01",
+            "amount": 68000
+        }
+    },
+    {
+        "pk": 25,
+        "model": "Staff.user",
+        "fields": {
+            "fk_position": 6,
+            "name": "Смирнов Александр Кириллович",
+            "date": "2023-01-01",
+            "amount": 65000
+        }
+    }
+]

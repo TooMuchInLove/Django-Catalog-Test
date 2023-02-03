@@ -1,0 +1,17 @@
+[
+    {
+        "pk": 6,
+        "model": "Staff.position",
+        "fields": {
+            "name": "HR-менеджер"
+        }
+    },
+
+    {
+        "pk": 7,
+        "model": "Staff.position",
+        "fields": {
+            "name": "Дата-аналитик"
+        }
+    }
+]

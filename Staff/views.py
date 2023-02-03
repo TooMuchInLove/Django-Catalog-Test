@@ -93,3 +93,10 @@ def get_info_user(request, id):
     templates = 'users/user_info.html'
 
     return render(request, templates, context)
+
+def sign_user(request):
+    context = {}
+
+    templates = 'sign/signup.html'
+
+    return render(request, templates, context)
