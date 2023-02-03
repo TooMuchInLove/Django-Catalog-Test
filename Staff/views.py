@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.conf import settings
@@ -94,9 +95,17 @@ def get_info_user(request, id):
 
     return render(request, templates, context)
 
-def sign_user(request):
+@login_required
+def login_user(request):
     context = {}
 
-    templates = 'sign/signup.html'
+    templates = 'account/login.html'
+
+    return render(request, templates, context)
+
+def logout_user(request):
+    context = {}
+
+    templates = 'account/logout.html'
 
     return render(request, templates, context)

@@ -1,6 +1,8 @@
 import os
 from pathlib import Path
 
+from django.urls import reverse_lazy
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -22,6 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'OnlineCatalog', # main app
     'Staff', # under app
+    # 'account', # under app
 ]
 
 MIDDLEWARE = [
@@ -97,3 +100,10 @@ MEDIA_URL = '/media/'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Sign
+LOGIN_REDIRECT_URL = reverse_lazy('profile')
+
+LOGIN_URL = reverse_lazy('login')
+
+LOGOUT_URL = reverse_lazy('logout')

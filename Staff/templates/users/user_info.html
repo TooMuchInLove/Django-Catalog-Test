@@ -10,10 +10,22 @@
             <img src="{{ MEDIA_URL }}images/users/none.png" alt="" class="user-profile-img0">
         {% endif %}
         <div class="user-block-info0">
-            <h1 class="user-name0">{{ user.name }}</h1>
-            <div class="user-description0">Должность: {{ user.fk_position }}</div>
-            <div class="user-date0">Дата приёма на работу {{ user.date }}</div>
-            <div class="user-amount0">Заработная плата {{ user.amount }} р.</div>
+            <div class="user-name0">{{ user.name }}</div>
+            <div class="user-description0">
+                <input type="text" name="name" value="{{ user.name }}"/>
+            </div>
+            <div class="user-description0">
+                Должность:
+                <input type="text" name="fk_position" value="{{ user.fk_position }}"/>
+            </div>
+            <div class="user-date0">
+                Дата приёма на работу
+                <input type="date" name="date" value="{{ user.date }}"/>
+            </div>
+            <div class="user-amount0">
+                Заработная плата (в рублях)
+                <input type="text" name="amount" value="{{ user.amount }}"/>
+            </div>
         </div>
     </div>
 {% endblock %}
